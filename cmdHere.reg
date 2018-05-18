@@ -6,3 +6,11 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\CmdHere\command]
 @="cmd /K \"cd /d %1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CmdHere]
+@="Cmd here"
+"Icon"="%systemRoot%\\System32\\cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CmdHere\command]
+@="cmd /K \"cd /d %v\""
+
